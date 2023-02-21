@@ -27,6 +27,10 @@
 - GET /movies/{id}  → **List a movie**
 - GET /movies → **List all movies** 
 
+<h2>Build and Running</h2>
+You can clone this repository and build it with yarn, 
+and run the server with [ yarn start ]
+
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 - [Express](https://expressjs.com/) - Server Framework
