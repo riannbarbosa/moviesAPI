@@ -1,5 +1,10 @@
 import express from 'express';
 import swaggerUI from 'swagger-ui-express'
+import cors from 'cors'
+import serverless from 'serverless-http'
+
+app.use(cors());
+
 
 const PORT = 3000;
 
@@ -19,4 +24,4 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`App running on port ${port}...`);
 });
-exports.api = functions.https.onRequest(app);
+exports.api = functions.https.serverless(app);
