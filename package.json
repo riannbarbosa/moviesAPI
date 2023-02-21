@@ -26,8 +26,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon dist/app.js",
-    "start-server": "node dist/app.js",
+    "start": "node dist/server.js",
+    "dev": "nodemon dist/server.js",
     "build": "./node_modules/.bin/babel ./src --out-dir dist"
   }
 }
