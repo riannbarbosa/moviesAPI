@@ -29,8 +29,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node dist/server.js",
-    "dev": "nodemon dist/server.js",
+    "start": "node dist/app.js",
+    "dev": "nodemon dist/app.js",
     "build": "./node_modules/.bin/babel ./src --out-dir dist",
     "deploy": "firebase deploy --only functions:api"
   }
