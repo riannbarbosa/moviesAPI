@@ -13,7 +13,6 @@ import {
 } from '../controller/moviesController';
 
 router.param('id', checkID);
-
 router.route('/')
 .post(checkBody, createMovie)
 .get(getMovies);
