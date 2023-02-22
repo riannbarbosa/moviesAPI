@@ -17,7 +17,7 @@
 ## 📝 Table of Contents
 
 - [Usage](#usage)
-- [Build and Running](#BaR)
+- [Building and Running](#BaR)
 - [Tests](#tests)
 - [Built Using](#built_using)
 - [Authors](#authors)
@@ -30,7 +30,7 @@
 - GET /movies/{id}  → **List a movie**
 - GET /movies → **List all movies** 
 
-## 🎈🎈 Build and Running<a name="BaR"></a>
+## 🎈🎈 Building and Running<a name="BaR"></a>
 You can clone this repository and build it with yarn, and run the server with **yarn start**
 
 ## 🎈⛏️ Tests <a name="tests"></a>
