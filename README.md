@@ -17,6 +17,7 @@
 ## 📝 Table of Contents
 
 - [Usage](#usage)
+- [Tests](#tests)
 - [Built Using](#built_using)
 - [Authors](#authors)
 
@@ -28,10 +29,16 @@
 - GET /movies/{id}  → **List a movie**
 - GET /movies → **List all movies** 
 
-<h2>Build and Running</h2>
+<h2> 🎈🎈 Build and Running</h2>
 You can clone this repository and build it with yarn, 
 and run the server with [ yarn start ]
 
+## 🎈⛏️ Tests <a name="tests"></a>
+For tests follow this steps:
+- Clone this repo
+- build with **yarn build** 
+- after run the server in dev mode with **yarn dev**
+- to run tests in a another terminal, go to the directory of the project and type **yarn test** and voilá!
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 - [Express](https://expressjs.com/) - Server Framework

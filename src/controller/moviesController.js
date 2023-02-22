@@ -1,7 +1,7 @@
 // import fs
 import fs from 'fs';
 const moviesData = JSON.parse(
-  fs.readFileSync(`${__dirname}/../../data/movies.json`)
+  fs.readFileSync(`${__dirname}/../data/movies.json`)
 );
 
 exports.checkID = (req, res, next, val) => {
