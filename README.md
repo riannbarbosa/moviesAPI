@@ -17,7 +17,7 @@
 ## 📝 Table of Contents
 
 - [Usage](#usage)
-- [Building and Running](#BaR)
+- [Building and Running](#bar)
 - [Tests](#tests)
 - [Built Using](#built_using)
 - [Authors](#authors)
@@ -25,12 +25,12 @@
 
 ## 🎈 Usage <a name="usage"></a>
 - PUT movies/{id} → **To update**
-- DELETE /movies/{id} - **To remove a movie**
+- DELETE /movies/{id} -> **To remove a movie**
 - POST /movies → **Register a new movie**
 - GET /movies/{id}  → **List a movie**
 - GET /movies → **List all movies** 
 
-## 🎈🎈 Building and Running <a name="BaR"></a>
+## 🎈🎈 Building and Running <a name="bar"></a>
 You can clone this repository and build it with yarn, and run the server with **yarn start**
 
 ## 🎈⛏️ Tests <a name="tests"></a>
