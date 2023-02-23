@@ -19,6 +19,5 @@ app.use('/movies/', moviesRouter);
 
 // exporting swagger and app to deployment
 
-
 module.exports = app;
-module.exports = swaggerUi.setup(swaggerDocs, options);
+module.exports = swaggerUI.setup(swaggerDocs, options);
