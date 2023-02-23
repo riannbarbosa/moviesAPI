@@ -1,5 +1,5 @@
 <h1 align="center">Movies API</h1>
-<h3 align="center"><i>Website available now!</i></h3>
+<h3 align="center"><i><a href="https://moviesrest-api.vercel.app/api-docs">Website </a>available!</i></h3>
 
 <div align="center">
 
@@ -44,6 +44,7 @@ For tests follow this steps:
 
 ## 🌟 Site <a name="site"></a>
 - Site here! -> <a href="https://moviesrest-api.vercel.app/api-docs">Movies API</a>
+  
 ## ⛏️ Built Using <a name = "built_using"></a>
 - [Express](https://expressjs.com/) - Server Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
