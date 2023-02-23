@@ -1,9 +1,11 @@
 <h1 align="center">Movies API</h1>
+<h3 align="center"><i>Website available now!</i></h3>
 
 <div align="center">
 
   ![GitHub Repo stars](https://img.shields.io/github/stars/riannbarbosa/moviesAPI?style=for-the-badge)
   ![Vercel](http://therealsujitk-vercel-badge.vercel.app/?app=therealsujitk-vercel-badge&style=for-the-badge&logo=false)
+  ![GitHub deployments](https://img.shields.io/github/deployments/riannbarbosa/moviesAPI/Production%20%E2%80%93%20movies-api?style=for-the-badge)
 
 </div>
 
@@ -18,6 +20,7 @@
 - [Usage](#usage)
 - [Building and Running](#bar)
 - [Tests](#tests)
+- [Site](#site)
 - [Built Using](#built_using)
 - [Authors](#authors)
 
@@ -39,6 +42,8 @@ For tests follow this steps:
 - after run the server in dev mode with **yarn dev**
 - to run tests in an another terminal, go to the directory of the project and type **yarn test** and voilá!
 
+## 🌟 Site <a name="site"></a>
+- Site here! -> <a href="https://moviesrest-api.vercel.app/api-docs">Movies API</a>
 ## ⛏️ Built Using <a name = "built_using"></a>
 - [Express](https://expressjs.com/) - Server Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
