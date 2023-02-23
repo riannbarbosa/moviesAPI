@@ -2,9 +2,8 @@
 
 <div align="center">
 
-  [![Status](https://img.shields.io/badge/status-active-success.svg)]() 
-  [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/db1c981b-1ff6-4f31-a2b2-8d138abe5b86/deploy-status)](https://app.netlify.com/sites/moviesrestapi/deploys)
+  ![GitHub Repo stars](https://img.shields.io/github/stars/riannbarbosa/moviesAPI?style=for-the-badge)
+  ![Vercel](http://therealsujitk-vercel-badge.vercel.app/?app=therealsujitk-vercel-badge&style=for-the-badge&logo=false)
 
 </div>
 
