@@ -17,6 +17,10 @@ app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
 app.use(express.json());
 app.use('/movies/', moviesRouter);
 
+const options = {
+    customCss: '.swagger-ui .topbar { display: none }'
+}
+
 // exporting swagger and app to deployment
 
 module.exports = app;
