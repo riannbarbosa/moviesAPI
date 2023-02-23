@@ -21,7 +21,7 @@ app.options('*', cors());
 }
  */
 
-app.use('/swagger-ui', express.static(path.join(__dirname, 'node_modules/swagger-ui-dist')));
+app.use('/swagger-ui', express.static(path.join(__dirname, '../node_modules/swagger-ui-dist')));
 
 app.get('/api-docs', (req, res) => {
     res.sendFile(path.join(__dirname, 'swagger-ui.html'));
