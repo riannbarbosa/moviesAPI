@@ -21,4 +21,4 @@ app.use('/movies/', moviesRouter);
 
 
 module.exports = app;
-module.exports = swaggerUi.setup(swaggerDocs, options)
+module.exports = swaggerUi.setup(swaggerDocs, options);
