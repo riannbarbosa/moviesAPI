@@ -1,7 +1,8 @@
 // import fs
 import fs from 'fs';
+
 const moviesData = JSON.parse(
-  fs.readFileSync(`${__dirname}/../data/movies.json`)
+  fs.readFileSync(`${__dirname}/../../data/movies.json`)
 );
 
 exports.checkID = (req, res, next, val) => {
@@ -53,25 +54,28 @@ exports.deleteMoviesById = (req, res, next) => {
   const updatedMovies = moviesData.indexOf(getId);
   moviesData.splice(updatedMovies, 1);
 
-  res.status(204).json({
-    status: 'success',
-    data: null,
-  });
+  fs.writeFile(
+    `${__dirname}/../../data/movies.json`,
+    JSON.stringify(moviesData),
+    err => {
+      res.status(204).json({
+        status: 'success',
+        data: null,
+      });
+    }
+  );
 };
 
 //  POST /movies/ - cria um filme
 exports.createMovie = (req, res, next) => {
   const randomm = Math.floor(Math.random() * 200);
-  const lastObj = moviesData[moviesData.length - 1];
-  const currId = parseInt(lastObj.id);
-  const newId = currId + randomm;
-  lastObj.id = newId;
-
-  const newMovie = Object.assign({ id: newId }, req.body);
+  const newId = moviesData[moviesData.length - 1].id + randomm;
+  
+  const newMovie = Object.assign(req.body, { id: newId });
   moviesData.push(newMovie);
 
   fs.writeFile(
-    `${__dirname}/../data/movies.json`,
+    `${__dirname}/../../data/movies.json`,
     JSON.stringify(moviesData),
     err => {
       res.status(201).json({
@@ -98,8 +102,9 @@ exports.updateMoviesById = (req, res, next) => {
   }
 
   moviesData[getIndex] = { ...moviesData[getIndex], ...updateMovie };
+
   fs.writeFile(
-    `${__dirname}/../data/movies.json`,
+    `${__dirname}/../../data/movies.json`,
     JSON.stringify(moviesData),
     err => {
       res.status(200).json({
