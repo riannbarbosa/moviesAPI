@@ -61,17 +61,17 @@ exports.deleteMoviesById = (req, res, next) => {
 
 //  POST /movies/ - cria um filme
 exports.createMovie = (req, res, next) => {
-  const ramdon = Math.floor(Math.random() * 200);
+  const randomm = Math.floor(Math.random() * 200);
   const lastObj = moviesData[moviesData.length - 1];
   const currId = parseInt(lastObj.id);
-  const newId = currId + ramdon;
+  const newId = currId + randomm;
   lastObj.id = newId;
 
   const newMovie = Object.assign({ id: newId }, req.body);
   moviesData.push(newMovie);
 
   fs.writeFile(
-    `${__dirname}/../../data/movies.json`,
+    `${__dirname}/../data/movies.json`,
     JSON.stringify(moviesData),
     err => {
       res.status(201).json({
@@ -99,7 +99,7 @@ exports.updateMoviesById = (req, res, next) => {
 
   moviesData[getIndex] = { ...moviesData[getIndex], ...updateMovie };
   fs.writeFile(
-    `${__dirname}/../../data/movies.json`,
+    `${__dirname}/../data/movies.json`,
     JSON.stringify(moviesData),
     err => {
       res.status(200).json({
