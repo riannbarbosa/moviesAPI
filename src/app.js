@@ -20,9 +20,12 @@ app.options('*', cors());
     customCss: '.swagger-ui .topbar { display: none }'
 }
  */
+
+app.use('/swagger-ui', express.static(path.join(__dirname, 'node_modules/swagger-ui-dist')));
+
 app.get('/api-docs', (req, res) => {
     res.sendFile(path.join(__dirname, 'swagger-ui.html'));
-  });
+});
   
 /* app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs, options)); */
 
